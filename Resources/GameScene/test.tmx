@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.2" orientation="orthogonal" renderorder="right-down" width="50" height="100" tilewidth="50" tileheight="40" infinite="0" nextobjectid="360">
+ <tileset firstgid="1" source="tile.tsx"/>
+ <layer name="wallcheck" width="50" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3T2w2AIAxA0U7h/qO6gaEVeXlOwieFK/GKiKtxZbTOzM59Oq/13FFzM9+gsrId1bk6dOjQ8fZuo+hYy587TvnPdejQoePEjkzL6h2tLaM7Kvu+pkOHDh27dFTpeDevt54dM991VkfvFh21WRFndJzyHjp07NTRk4616AAAAAAAAAAAAAAAGOsG07uqHCBOAAA=
+  </data>
+ </layer>
+ <layer name="barrier" width="50" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3XURKDIAyE4Z6i9z9qL6A2C0lY4f9mOtOHCC4o4Oezh6/wc2j3qb/Muup2u/sjxxjHHMq7pb5n3TnUvqIZZ3Ko41g1Zt12yqHMITlq7fhcResdjeRwPCc+vQdv2wcrc9xdmz0+o/em1HblUDg/V2pf7jkic6ysJTM5Rtarf9fe1a/wNL4Z7XQ5PcfsHp3t9Byz9dmi6+hoTZfs/iP7SEX2ihyr+s60Kscu80GO+fZOyXF3Vq5e+yL3ptSuXPvIUduWKvJ9Fn2m2VO9kMPLqrNzlTfcY4RDjoy5d8lx9X+0jVV2mY8M5PBCDi/dOdRzxNVa5nDm2CUHAAAAAAAAAAAAAAAAcIIfuGa0riBOAAA=
+  </data>
+ </layer>
+ <layer name="ground" width="50" height="100">
+  <properties>
+   <property name="cc_vertexz" value="-170"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer name="ground2" width="50" height="100">
+  <properties>
+   <property name="cc_vertexz" value="-170"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3ZTUrDUBTF8VvaTLoRUdyPgm5Ap1odK/gBOherI7U4tqJbENS5SxHRgSe1gxBerUl6mxf5/+AM+hLSewhvEJ4ZAAAAAMRnJ5Df1mN1rdyMs630xutbmfU0g1qmQxl7XbN95UA57NY9TXl3mn2oPCiPDe6RdVv3ADNCj7jQIy70+JuzjllfuVAuO37/05t+SyVPmv1ZeVFeHXt4e9fsH8qn8uXYY9fv0SNpj8XEv4f3/qBHMW9+jx6Z1/7wtpD8vI8lZTmpe5ry6BGXFc2+qqwp6w3ucaTZj5UT5bTBPYBY8Y1UzbBldt8qfz2PHtXQIyzWfd6UHkXn3GibbbYnX4/1feSdq0P/H/SYZt49QmeURTLpGd7f3nnp2eVVLqG1NIPc7+w5Z+heAAAAAAAAAAAAAAAAALP1DcijKkQgTgAA
+  </data>
+ </layer>
+ <layer name="furniture" width="50" height="100">
+  <properties>
+   <property name="cc_alpha_func" value="0.5"/>
+   <property name="cc_vertexz" value="automatic"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2Xy27TQBhGxw2xk1SthEBixVWCLbRFwKaBF4AWJNgBvSBgw+UFaLuBHZekfQ1ughdo4QUKbFtAsAXactnCiYKVyE4cJXHIDPqOdDSZ2vn9/aknnhgT52dgzK+g+nqTcStocFIH9KpuSKZgjI8B5vBgzphDueqx/YwHcnbVbcYY1ziGx/EEnqf+hb/XOMt4rsPrdVN31TfmDb7Fd3583ohZrnEVr+H1QmeZ067rcc8NYAa3BfG5K4yQdRTH8GgQnzdiKGPMcObf5mzFNFlncBavBPF5hZNkPlWXe5zXRcv6KJG1jIu4FMTnFW6R+bZluf9XHmeNeZJtPrrCGlnXs81HVxjnGVH0m4+usJrnuZfvd4ru8XhuDnT5TE5rPxfW6aTGCD2MRvpoteZ7tZ8L69TXuDhozCWc4B6fTLjPp8kxE+mj1Zrv1T4xrFNf4z49PMB5elhI6KNEjnKkj1Zrvlf7xLtkv4e/KzUHq3+7zOc3hU+5/rOEPpZ5z0qKWdLgMD0cQd8z5iE9PML39PAh5e9PG/eJIe08x23cJ4ZE13R0j+sK0TWtPa59lPi/lHERlxzaa0VZJvsKvsLXlveRtJ43yb6F3/GH5X1oPQtbWeN32Hq+NrrKEPvM4UJtdInnfH+9wJeVPQDZi4XaWH/Mdj6S8RN+xhtkv1lofMx2tvP7eQfubPA7OumY6A1Ja8DV9dHOMdvQ+hBCiP7xBb/iN9zoc5Z22BWZ7/aM2YN7cZ+XfK5NRLOdJvsZnMBJh/u4Q/Y5nMcFh/tI61zRGfqMhRBCCCGEEEIIIYQQQgghhBBCCCGEEEK4zh9eho3CIE4AAA==
+  </data>
+ </layer>
+ <layer name="wall1" width="50" height="100">
+  <properties>
+   <property name="cc_alpha_func" value="0.5"/>
+   <property name="cc_vertexz" value="automatic"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3Zy0rDQBSA4dFaFw6ir+B1X2tduNFX8Pr+j+KRJhAOmUWgoRW/D34Ik/ak3Q2TUgD+hqNaynG0iE7S9e+93mltz2jNHX53bP6yTp/bsoo5D9E6ekzXq8EzniY+L393bP6mTp8LAHDo+n1ibjHTPnGZ2vU+MbeeaZ+4Sdknwv90dV7K9aAxN7F+G91F943P7Ntb/K73QWM+Yv0z+oq+D/R/AADTndVtF11Zv37Zdaie67aXrqxff23ch7m1zl/y+7RdnpXMoXX+kt+nOSsBAAAAAAAAAAAAAPbtByJhHo0gTgAA
+  </data>
+ </layer>
+ <layer name="复制 wall1" width="50" height="100" opacity="0.2">
+  <properties>
+   <property name="cc_vertexz" value="-100"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3Zy0rDQBSA4dFaFw6ir+B1X2tduNFX8Pr+j+KRJhAOmUWgoRW/D34Ik/ak3Q2TUgD+hqNaynG0iE7S9e+93mltz2jNHX53bP6yTp/bsoo5D9E6ekzXq8EzniY+L393bP6mTp8LAHDo+n1ibjHTPnGZ2vU+MbeeaZ+4Sdknwv90dV7K9aAxN7F+G91F943P7Ntb/K73QWM+Yv0z+oq+D/R/AADTndVtF11Zv37Zdaie67aXrqxff23ch7m1zl/y+7RdnpXMoXX+kt+nOSsBAAAAAAAAAAAAAPbtByJhHo0gTgAA
+  </data>
+ </layer>
+ <layer name="wall2" width="50" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2ZSUwUQRSGxxswaMJ6d724xuXgmsAAiV7c0Kte9M6aKC5R0YuKu3fAIVFQXNCLirJeFBUQEgVF1jswcFHQv2NVrDyrpqZnUHvi+5IvVT3dU9Sjuqpf9Ywn+HwTsAW2GpyC09ANX3H9N9hh8A387rSZ6K5dE7vRzh64V5iv1KX74H6Xf285rl8BZxL0zsIDOH9Q0+5gks83BIctjsBROAZPoZ3T8IywXKlLz8JzLuM4j+svwIsGK+AleFnTborf50uFaRbTYQbMhA/QzkP4SNig1KWP4ROXcTzF9c/gc4ON8AV8qWm3AP0qhAGYQwwoOsclsBRWYkyqYDW8ReqVogzCmiR3cajt1hjaN7WrxkEtEtI4OtFOF+yG70m9U9Qde13GQb+ra7/H0K6Mo8hgsSYOL0LvKzoe6v0WL3EEwoxFcZzFQWOR8cTTeNBxCCjH8TIe6v/fNCbxEIecB7r7ic7zJuQHzUp+1ULqTtkG213mV69w/Wsll+ogdad8C99p2tWtVzn+3+8pdTzGRZ44CUOiVOuhGPNEmUvNkPpsmDzRtO6qY0LvK5onUvNjzBNXwlWiVOtOuRquiSCOcHNdxkHzRGr5HOSJFSQ/tOWJ4eaHaZ7TPJHaMAd5YiPJD93mibr5bcoTqdUiTwzGmCfK76q5YdDSbhb6la15DqrzW8aTC/P8v/JEavcfyhN7iNHkifHyHKxEv6pgdQQGYY1H4+hEv7pgdwT2wF6PxjEv2edbC9fB9XCD5lh6CB5O/tc91nMF/boKr8Hr8IbFmx6Nown9arbYAlthG2z3aBzj6NeEoo5JfB6CU3DacE0S5o0fJsP5Hp1DOo5gDT8Ky+AxUZaRY6c8Dk+4fI78TW6jb3dgLawTZS05dsq78J6H4/iAvn2EfbBflH3k2Ck/wc8ejoOOh+x3XZTjIfdlOuW77zaX+5lI0I1Hv6Kb8VD3ZTpDMezNbCT6f65RVHXNkuUCy/q1EHn4IrjY4BLhUrjM5V7Axkb0bZPGzXAL3KqU2yxxRLK/jHaPaWM77pUdcGcE7rLcV5HsL6PdY9qQz4+TQtpv9XNbHJHsL6PdY9qQ61W9kFKvnLtviWMQfRuCw2EcgaNwbI7jkOvVgJAyoJz7YokjBedTYVoY02EGzPTwsygLfcuGgTDmwFyY5+E4CtC3QlgUxmJYAks9HIfp/Qv9PS2adzB/E9P7F/p7muldCcMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDPN/8gPtVxLFIE4AAA==
+  </data>
+ </layer>
+ <layer name="复制 wall2" width="50" height="100" opacity="0.2">
+  <properties>
+   <property name="cc_vertexz" value="-100"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2ZSUwUQRSGxxswaMJ6d724xuXgmsAAiV7c0Kte9M6aKC5R0YuKu3fAIVFQXNCLirJeFBUQEgVF1jswcFHQv2NVrDyrpqZnUHvi+5IvVT3dU9Sjuqpf9Ywn+HwTsAW2GpyC09ANX3H9N9hh8A387rSZ6K5dE7vRzh64V5iv1KX74H6Xf285rl8BZxL0zsIDOH9Q0+5gks83BIctjsBROAZPoZ3T8IywXKlLz8JzLuM4j+svwIsGK+AleFnTborf50uFaRbTYQbMhA/QzkP4SNig1KWP4ROXcTzF9c/gc4ON8AV8qWm3AP0qhAGYQwwoOsclsBRWYkyqYDW8ReqVogzCmiR3cajt1hjaN7WrxkEtEtI4OtFOF+yG70m9U9Qde13GQb+ra7/H0K6Mo8hgsSYOL0LvKzoe6v0WL3EEwoxFcZzFQWOR8cTTeNBxCCjH8TIe6v/fNCbxEIecB7r7ic7zJuQHzUp+1ULqTtkG213mV69w/Wsll+ogdad8C99p2tWtVzn+3+8pdTzGRZ44CUOiVOuhGPNEmUvNkPpsmDzRtO6qY0LvK5onUvNjzBNXwlWiVOtOuRquiSCOcHNdxkHzRGr5HOSJFSQ/tOWJ4eaHaZ7TPJHaMAd5YiPJD93mibr5bcoTqdUiTwzGmCfK76q5YdDSbhb6la15DqrzW8aTC/P8v/JEavcfyhN7iNHkifHyHKxEv6pgdQQGYY1H4+hEv7pgdwT2wF6PxjEv2edbC9fB9XCD5lh6CB5O/tc91nMF/boKr8Hr8IbFmx6Nown9arbYAlthG2z3aBzj6NeEoo5JfB6CU3DacE0S5o0fJsP5Hp1DOo5gDT8Ky+AxUZaRY6c8Dk+4fI78TW6jb3dgLawTZS05dsq78J6H4/iAvn2EfbBflH3k2Ck/wc8ejoOOh+x3XZTjIfdlOuW77zaX+5lI0I1Hv6Kb8VD3ZTpDMezNbCT6f65RVHXNkuUCy/q1EHn4IrjY4BLhUrjM5V7Axkb0bZPGzXAL3KqU2yxxRLK/jHaPaWM77pUdcGcE7rLcV5HsL6PdY9qQz4+TQtpv9XNbHJHsL6PdY9qQ61W9kFKvnLtviWMQfRuCw2EcgaNwbI7jkOvVgJAyoJz7YokjBedTYVoY02EGzPTwsygLfcuGgTDmwFyY5+E4CtC3QlgUxmJYAks9HIfp/Qv9PS2adzB/E9P7F/p7muldCcMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDPN/8gPtVxLFIE4AAA==
+  </data>
+ </layer>
+ <layer name="wall3" width="50" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2XPU8UURhGR7SYXUahAy34B+AXBVoIHWoBNSZ+IBZKItCBFGivPwBIADtZC/RniAkfJViIHWqBrZrAcibMZW4uQyaQnXA3eU5yktk7yczz5L13sxsEQog8BspB8KB89LqI5xf1jpi3PPNd+eh1Ec8v6h1CCCH8YIfv9z91+B2/Teaf+At/Y1vjWSc6HS3kbsXLeAX7sL+Oupg59JL5Lt7D+ziFr/FNHXSJO5g5jOMEvsJJXMJP+LkGcyn6d2LcwczhAy5iBT/id9zCHzWYS9G/E3utObg9LkVB0ITNUe3mUiQmv9vDnA93Lr6y2JhasXqY8+HOxVfi/BsZPcwc7B5bnveoWD028ZuTf8r67CvuviqRtYx3sBt7onSP1dP5uEXu2ziCozgWpXvM5/OxYZ0P02EY53EB30fpnvL5fITRwV6KO7xIOhhecr1u7TGfz0fXMR0OuZjusW6Pezy3Osxm5Jyz9tioxz2myTaTdPiakXOFtVVcS7r4yheyLScd/mfk3GVtD6tJF1/5S7Z/x3RwqXrcY6XEvsE1XC+d/L4v7JJtD6txxoz/BHn3faGdbB14Fa9l5My773IuDIIGPI8Xwvz1WvGQbI/wMT7JyJl33+U6GW/gTewM89d9ZZCMT3EIn4X560IIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEWwDzMHEiEgTgAA
+  </data>
+ </layer>
+ <layer name="复制 wall3" width="50" height="100" opacity="0.2">
+  <properties>
+   <property name="cc_vertexz" value="-100"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2XPU8UURhGR7SYXUahAy34B+AXBVoIHWoBNSZ+IBZKItCBFGivPwBIADtZC/RniAkfJViIHWqBrZrAcibMZW4uQyaQnXA3eU5yktk7yczz5L13sxsEQog8BspB8KB89LqI5xf1jpi3PPNd+eh1Ec8v6h1CCCH8YIfv9z91+B2/Teaf+At/Y1vjWSc6HS3kbsXLeAX7sL+Oupg59JL5Lt7D+ziFr/FNHXSJO5g5jOMEvsJJXMJP+LkGcyn6d2LcwczhAy5iBT/id9zCHzWYS9G/E3utObg9LkVB0ITNUe3mUiQmv9vDnA93Lr6y2JhasXqY8+HOxVfi/BsZPcwc7B5bnveoWD028ZuTf8r67CvuviqRtYx3sBt7onSP1dP5uEXu2ziCozgWpXvM5/OxYZ0P02EY53EB30fpnvL5fITRwV6KO7xIOhhecr1u7TGfz0fXMR0OuZjusW6Pezy3Osxm5Jyz9tioxz2myTaTdPiakXOFtVVcS7r4yheyLScd/mfk3GVtD6tJF1/5S7Z/x3RwqXrcY6XEvsE1XC+d/L4v7JJtD6txxoz/BHn3faGdbB14Fa9l5My773IuDIIGPI8Xwvz1WvGQbI/wMT7JyJl33+U6GW/gTewM89d9ZZCMT3EIn4X560IIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEWwDzMHEiEgTgAA
+  </data>
+ </layer>
+ <layer name="wall4" width="50" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3PtVGEYRiF0TfZ3VlypAEkQZpBEqQZpCGkASRBmkAaQBLk0sIX8M/HnDPz5PdWAQAAwP9yOaq6StfpZjT0mnav2f6W3tNHxz8Wx1VLaTmtjIde024z27fSdtrp+Mdhth+l43TS8Y/TbD9L5+mi4x+P2f6UntNLxz9mJ1VzaT4tTIZe0+52WnWX7tPDdOg17T6z/St9/36YGXpNu9VsX0vraaPjH7vZvpf200HHPwAAAAAAAAAAAAAAAAD4Oz9E7sCKIE4AAA==
+  </data>
+ </layer>
+ <layer name="复制 wall4" width="50" height="100" opacity="0.2">
+  <properties>
+   <property name="cc_vertexz" value="-100"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3PtVGEYRiF0TfZ3VlypAEkQZpBEqQZpCGkASRBmkAaQBLk0sIX8M/HnDPz5PdWAQAAwP9yOaq6StfpZjT0mnav2f6W3tNHxz8Wx1VLaTmtjIde024z27fSdtrp+Mdhth+l43TS8Y/TbD9L5+mi4x+P2f6UntNLxz9mJ1VzaT4tTIZe0+52WnWX7tPDdOg17T6z/St9/36YGXpNu9VsX0vraaPjH7vZvpf200HHPwAAAAAAAAAAAAAAAAD4Oz9E7sCKIE4AAA==
+  </data>
+ </layer>
+ <layer name="ground_plant" width="50" height="100">
+  <properties>
+   <property name="cc_vertexz" value="automatic"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2bXW7DIAyAm+skucd2gj1NWrv73yB7WHhARQgwNjaYxJ8UrWoTbIx/ILDHg8a2EB8EWJf33zWQISUvZovktrY1ktHya9kBPY+Ke7QA+c4h2DY3TtecD7X0oydSMTBLbEnzc9rheV6v8/qNPnOSkiEh5y/4/D0g3jhI+SZ37tiCOp2CMz/kZIRj9XFen0A7UMzmdO4Z6zXjRLHtqPqZk+v6OUsNuQN3r2eu/7PMMTUB5avec1ZDhpU5PmbNN5r8uVWXXmPg6rzkujhFqm/Y/mL8fWOYz2DHsyQvbquX31JskBsX/z3VT0fkGE35wUEZj4P4nCSz1gvjjc2v66DkEC15p0aP1D07476LBJj34BpzVcq2mu0dQ7Wpxlp2VWrGSGNsYPF1TJtfleLZ/5aqwdrHBLvHwLmHz4HTp2V9WMph6yJ/FoP67BbFSU7P+KwHBq6+17bzhbyHe2wgH6q1I7YfWFpyI8Zm2H60+HSoF3Wem7tHejxSUMeI490aB5I5ntvWjpy+cU2W6Feci0e8O86t/yGdQj8dcSYwB3QGYjZK570MXq5oZ23rIY+Pz5LNa9ZOmtCoU29Ka9pZoJ7Vi+8ZvebFxP5Vct++1O1tY+j1vwe1cqRjC9r7xf42Eql5e26PQSretdpXA7PU3Vn01EqPGPC1Q1oWNLe1eDcMHq4US5gaYvXG4OBK8cMFNbZmiUnuNTTECLuYXxvGfbB4NwzDMAxjVv4BQHcAVyBOAAA=
+  </data>
+ </layer>
+ <objectgroup name="obj_wall">
+  <object id="216" x="500" y="80">
+   <polyline points="0,0 -450,0 -450,200 -100,200 -100,240 -500,240 -500,-40 50,-40 50,240 0,240 0,0"/>
+  </object>
+  <object id="217" x="500" y="600">
+   <polyline points="0,0 -450,0 -450,200 -100,200 -100,240 -500,240 -500,-40 50,-40 50,240 0,240 0,0"/>
+  </object>
+  <object id="219" x="1150" y="320">
+   <polyline points="0,0 -50,0 -50,-280 500,-280 500,0 100,0 100,-40 450,-40 450,-240 0,-240 0,0"/>
+  </object>
+  <object id="224" x="1150" y="840">
+   <polyline points="0,0 -50,0 -50,-280 500,-280 500,0 100,0 100,-40 450,-40 450,-240 0,-240 0,0"/>
+  </object>
+  <object id="226" x="250" y="1520">
+   <polyline points="0,0 0,40 -200,40 -200,-400 400,-400 400,40 200,40 200,0 350,0 350,-360 -150,-360 -150,0 0,0"/>
+  </object>
+  <object id="227" x="800" y="2200">
+   <polyline points="0,0 -800,0 -800,-80 0,-80 0,0"/>
+  </object>
+  <object id="228" x="850" y="2120">
+   <polyline points="0,0 0,80 300,80 300,-400 250,-400 250,0 0,0"/>
+  </object>
+  <object id="229" x="1600" y="1360">
+   <polyline points="0,0 0,-160 -50,-160 -50,0 -350,0 -350,40 -50,40 -50,320 -550,320 -550,40 -450,40 -450,0 -600,0 -600,360 0,360 0,0"/>
+  </object>
+  <object id="230" x="1550" y="1160">
+   <polyline points="0,0 50,0 50,-320 0,-320 0,0"/>
+  </object>
+  <object id="233" x="2050" y="1080">
+   <polyline points="0,0 -200,0 -200,-880 450,-880 450,0 250,0 250,-40 400,-40 400,-840 -150,-840 -150,-40 0,-40 0,0"/>
+  </object>
+  <object id="267" x="550" y="640">
+   <polyline points="0,0 250,0 250,80 0,80 0,0"/>
+  </object>
+  <object id="268" x="850" y="640">
+   <polyline points="0,0 0,80 250,80 250,0 0,0"/>
+  </object>
+  <object id="269" x="1500" y="600">
+   <polyline points="0,0 0,120 100,120 100,0 0,0"/>
+  </object>
+  <object id="272" x="250" y="1920">
+   <polyline points="0,0 200,0 200,-120 0,-120 0,0"/>
+  </object>
+  <object id="320" x="2200" y="840">
+   <polyline points="0,0 0,-80 -200,-80 -200,0 0,0"/>
+  </object>
+  <object id="321" x="2450" y="640">
+   <polyline points="0,0 0,-80 -300,-80 -300,0 0,0"/>
+  </object>
+  <object id="322" x="2300" y="440">
+   <polyline points="0,0 0,-80 -400,-80 -400,0 0,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="obj_container" offsetx="150" offsety="-80">
+  <object id="172" name="case1" x="1100" y="1600">
+   <properties>
+    <property name="items" value="2*1|202*12|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="2dcase1.png"/>
+   </properties>
+  </object>
+  <object id="196" name="桌子" x="100" y="160" width="100" height="40">
+   <properties>
+    <property name="items" value="103*2|106*1|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="197" name="衣柜" x="250" y="160" width="100" height="40">
+   <properties>
+    <property name="items" value="201*30|1*1|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="206" name="木桶" x="-100" y="320" width="100" height="40">
+   <properties>
+    <property name="items" value="101*2|105*1|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="248" name="衣柜" x="250" y="680" width="100" height="40">
+   <properties>
+    <property name="items" value="201*20|202*5|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="249" name="桌子" x="100" y="680" width="100" height="40">
+   <properties>
+    <property name="items" value="103*2|106*1|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="250" name="木桶" x="-100" y="840" width="100" height="40">
+   <properties>
+    <property name="items" value="101*2|105*1|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="255" name="桌子" x="1200" y="160" width="100" height="40">
+   <properties>
+    <property name="items" value="103*2|106*1|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="256" name="衣柜" x="1350" y="160" width="100" height="40">
+   <properties>
+    <property name="items" value="102*1|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="257" name="桌子" x="1000" y="680" width="100" height="40">
+   <properties>
+    <property name="items" value="103*2|106*1|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="258" name="衣柜" x="1100" y="680" width="100" height="40">
+   <properties>
+    <property name="items" value="202*5|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="277" name="架柜" x="1750" y="320" width="200" height="40">
+   <properties>
+    <property name="items" value="301*1|104*1|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="279" name="架柜" x="1950" y="320" width="200" height="40">
+   <properties>
+    <property name="items" value="302*1|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="280" name="展示台" x="2100" y="1000" width="200" height="80">
+   <properties>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="282" name="木桶" x="1750" y="1080" width="100" height="40">
+   <properties>
+    <property name="items" value="102*1|105*1|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="283" name="木桶" x="2050" y="880" width="100" height="40">
+   <properties>
+    <property name="items" value="106*3|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="284" name="木桶" x="2200" y="320" width="100" height="40">
+   <properties>
+    <property name="items" value="101*1|106*1|"/>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="305" x="-100" y="680" width="200" height="80">
+   <properties>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="323" x="-100" y="160" width="200" height="80">
+   <properties>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="324" x="1750" y="560" width="100" height="200">
+   <properties>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+  <object id="325" x="1000" y="160" width="200" height="80">
+   <properties>
+    <property name="physicstpye" type="int" value="0"/>
+    <property name="sprite" value="empty.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="obj_NPC">
+  <object id="30" name="戴夫" x="1200" y="680" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="2"/>
+    <property name="items" value="201*300|"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="1.5"/>
+    <property name="sprite" value="human30.png"/>
+   </properties>
+  </object>
+  <object id="31" name="Zombie" x="1350" y="2960" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="32" name="Zombie" x="1900" y="2280" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="143" name="Zombie" x="1500" y="2960" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="144" name="Zombie" x="300" y="2600" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="148" name="Zombie" x="1950" y="880" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="149" name="Zombie" x="1650" y="2720" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="150" name="Zombie" x="1150" y="2720" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="151" name="Zombie" x="550" y="2960" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="152" name="Zombie" x="700" y="2560" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="153" name="Zombie" x="1650" y="2320" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="154" name="Zombie" x="1300" y="2560" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="155" name="Zombie" x="1600" y="2560" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="156" name="Zombie" x="2400" y="360" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="157" name="Zombie" x="1150" y="2440" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="158" name="Zombie" x="2100" y="480" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="159" name="Zombie" x="1950" y="2600" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="160" name="Zombie" x="250" y="2840" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="161" name="Zombie" x="2350" y="800" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="162" name="Zombie" x="1200" y="2640" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="163" name="Zombie" x="1750" y="2680" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="164" name="Zombie" x="500" y="3280" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="165" name="Zombie" x="950" y="2720" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="166" name="Zombie" x="1000" y="2560" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="167" name="Zombie" x="700" y="3000" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="168" name="Zombie" x="550" y="2720" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="169" name="索尼" x="350" y="1110" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="2"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="1.5"/>
+    <property name="sprite" value="human169.png"/>
+   </properties>
+  </object>
+  <object id="170" name="克莱尔" x="1350" y="680" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="2"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="1.5"/>
+    <property name="sprite" value="human170.png"/>
+   </properties>
+  </object>
+  <object id="171" name="奥诺夫" x="850" y="1280" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="2"/>
+    <property name="items" value="202*50|"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="1.5"/>
+    <property name="sprite" value="human171.png"/>
+   </properties>
+  </object>
+  <object id="326" name="Zombie" x="2350" y="2480" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="327" name="Zombie" x="2200" y="2920" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="328" name="Zombie" x="2100" y="2520" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="329" name="Zombie" x="1950" y="3160" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="330" name="Zombie" x="2000" y="3480" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="331" name="Zombie" x="1700" y="3200" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="332" name="Zombie" x="1350" y="3160" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="333" name="Zombie" x="1400" y="3480" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="334" name="Zombie" x="600" y="3440" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="335" name="Zombie" x="1700" y="3080" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="336" name="Zombie" x="1750" y="3400" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="337" name="Zombie" x="1450" y="3120" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="338" name="Zombie" x="1400" y="2960" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="339" name="Zombie" x="1450" y="3280" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+  <object id="340" name="Zombie" x="650" y="3240" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="1"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="2"/>
+    <property name="sprite" value="zombie.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="obj_player">
+  <object id="33" name="Player" x="350" y="160" width="30" height="62">
+   <properties>
+    <property name="biologytpye" type="int" value="0"/>
+    <property name="physicstpye" type="int" value="2"/>
+    <property name="speed" type="float" value="4.3"/>
+    <property name="sprite" value="human33.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(EngineRoot)external\lua\lua53;$(EngineRoot)external\sqlite3\include;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot);$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_BOX2D_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END);libcurl_imp.lib;websockets.lib;glew32.lib;liblua53.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <CustomBuildStep>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+      </Command>
+      <Outputs>$(TargetName).cab</Outputs>
+      <Inputs>$(TargetFileName)</Inputs>
+    </CustomBuildStep>
+    <Link>
+      <IgnoreSpecificDefaultLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(EngineRoot)external\lua\lua53;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl_imp.lib;websockets.lib;sqlite3.lib;%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AIManager.cpp" />
+    <ClCompile Include="..\Classes\AI_Attack.cpp" />
+    <ClCompile Include="..\Classes\AI_BaseNode.cpp" />
+    <ClCompile Include="..\Classes\AI_BehaviorNode.cpp" />
+    <ClCompile Include="..\Classes\AI_CatchTo.cpp" />
+    <ClCompile Include="..\Classes\AI_ControllNode.cpp" />
+    <ClCompile Include="..\Classes\AI_EscapeFrom.cpp" />
+    <ClCompile Include="..\Classes\AI_Hover.cpp" />
+    <ClCompile Include="..\Classes\AI_KeepFrom.cpp" />
+    <ClCompile Include="..\Classes\AI_MoveTo.cpp" />
+    <ClCompile Include="..\Classes\AI_Parallel.cpp" />
+    <ClCompile Include="..\Classes\AI_PickUpDrop.cpp" />
+    <ClCompile Include="..\Classes\AI_RandomSeletor.cpp" />
+    <ClCompile Include="..\Classes\AI_RootNode.cpp" />
+    <ClCompile Include="..\Classes\AI_Seletor.cpp" />
+    <ClCompile Include="..\Classes\AI_Sequence.cpp" />
+    <ClCompile Include="..\Classes\AI_Speak.cpp" />
+    <ClCompile Include="..\Classes\AI_TalkTo.cpp" />
+    <ClCompile Include="..\Classes\AstarCaculator.cpp" />
+    <ClCompile Include="..\Classes\BackPackUITemplate.cpp" />
+    <ClCompile Include="..\Classes\BiologyRelationship.cpp" />
+    <ClCompile Include="..\Classes\BloodBar.cpp" />
+    <ClCompile Include="..\Classes\Bullet.cpp" />
+    <ClCompile Include="..\Classes\ChoicesView.cpp" />
+    <ClCompile Include="..\Classes\ClickController.cpp" />
+    <ClCompile Include="..\Classes\Dialog.cpp" />
+    <ClCompile Include="..\Classes\DialogBoxManager.cpp" />
+    <ClCompile Include="..\Classes\DialogBoxUITemlate.cpp" />
+    <ClCompile Include="..\Classes\DialogBoxView.cpp" />
+    <ClCompile Include="..\Classes\Drop.cpp" />
+    <ClCompile Include="..\Classes\EndingManager.cpp" />
+    <ClCompile Include="..\Classes\findWayCaculator.cpp" />
+    <ClCompile Include="..\Classes\GamePauseUtils.cpp" />
+    <ClCompile Include="..\Classes\HumanPerception.cpp" />
+    <ClCompile Include="..\Classes\ItemAmmo.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\ItemAttachment.cpp" />
+    <ClCompile Include="..\Classes\b2Listener.cpp" />
+    <ClCompile Include="..\Classes\KaguyaHelper.cpp" />
+    <ClCompile Include="..\Classes\Logger.cpp" />
+    <ClCompile Include="..\Classes\Mission.cpp" />
+    <ClCompile Include="..\Classes\MissionManager.cpp" />
+    <ClCompile Include="..\Classes\MissionTarget.cpp" />
+    <ClCompile Include="..\Classes\MissionUITemplate.cpp" />
+    <ClCompile Include="..\Classes\MissionView.cpp" />
+    <ClCompile Include="..\Classes\Perception.cpp" />
+    <ClCompile Include="..\Classes\PhysicsWorld.cpp" />
+    <ClCompile Include="..\Classes\BackPackView.cpp" />
+    <ClCompile Include="..\Classes\Biology.cpp" />
+    <ClCompile Include="..\Classes\CacheManager.cpp" />
+    <ClCompile Include="..\Classes\Container.cpp" />
+    <ClCompile Include="..\Classes\ContainerItemPage.cpp" />
+    <ClCompile Include="..\Classes\DBHelper.cpp" />
+    <ClCompile Include="..\Classes\Entity.cpp" />
+    <ClCompile Include="..\Classes\ItemFood.cpp" />
+    <ClCompile Include="..\Classes\ItemFoodAttacher.cpp" />
+    <ClCompile Include="..\Classes\GameManager.cpp" />
+    <ClCompile Include="..\Classes\GameScene.cpp" />
+    <ClCompile Include="..\Classes\GameTool.cpp" />
+    <ClCompile Include="..\Classes\GearItemPage.cpp" />
+    <ClCompile Include="..\Classes\GearPageView.cpp" />
+    <ClCompile Include="..\Classes\GLES-Render.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\Item.cpp" />
+    <ClCompile Include="..\Classes\ItemAttacher.cpp" />
+    <ClCompile Include="..\Classes\ItemDataBase.cpp" />
+    <ClCompile Include="..\Classes\ItemFactory.cpp" />
+    <ClCompile Include="..\Classes\ItemMoveNode.cpp" />
+    <ClCompile Include="..\Classes\ItemPage.cpp" />
+    <ClCompile Include="..\Classes\ConatinerPageView.cpp" />
+    <ClCompile Include="..\Classes\GameLayer.cpp" />
+    <ClCompile Include="..\Classes\KeyBoradController.cpp" />
+    <ClCompile Include="..\Classes\MouseController.cpp" />
+    <ClCompile Include="..\Classes\MoveController.cpp" />
+    <ClCompile Include="..\Classes\NPC.cpp" />
+    <ClCompile Include="..\Classes\ItemPageView.cpp" />
+    <ClCompile Include="..\Classes\Player.cpp" />
+    <ClCompile Include="..\Classes\GameUILayer.cpp" />
+    <ClCompile Include="..\Classes\PlayerPerception.cpp" />
+    <ClCompile Include="..\Classes\Relation.cpp" />
+    <ClCompile Include="..\Classes\RelationShipManager.cpp" />
+    <ClCompile Include="..\Classes\SceneManager.cpp" />
+    <ClCompile Include="..\Classes\SpeakWords.cpp" />
+    <ClCompile Include="..\Classes\StartScene.cpp" />
+    <ClCompile Include="..\Classes\ItemWeapon.cpp" />
+    <ClCompile Include="..\Classes\ItemWeaponAttacher.cpp" />
+    <ClCompile Include="..\Classes\TriggerManager.cpp" />
+    <ClCompile Include="..\Classes\WeaponAttachmentItemPage.cpp" />
+    <ClCompile Include="..\Classes\WeaponGearItemPage.cpp" />
+    <ClCompile Include="..\Classes\WeaponGearPageView.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AIManager.h" />
+    <ClInclude Include="..\Classes\AI_Attack.h" />
+    <ClInclude Include="..\Classes\AI_BaseNode.h" />
+    <ClInclude Include="..\Classes\AI_BehaviorNode.h" />
+    <ClInclude Include="..\Classes\AI_CatchTo.h" />
+    <ClInclude Include="..\Classes\AI_ControllNode.h" />
+    <ClInclude Include="..\Classes\AI_EscapeFrom.h" />
+    <ClInclude Include="..\Classes\AI_Hover.h" />
+    <ClInclude Include="..\Classes\AI_KeepFrom.h" />
+    <ClInclude Include="..\Classes\AIIncludes.h" />
+    <ClInclude Include="..\Classes\AI_MoveTo.h" />
+    <ClInclude Include="..\Classes\AI_Nearest.h" />
+    <ClInclude Include="..\Classes\AI_Parallel.h" />
+    <ClInclude Include="..\Classes\AI_PickUpDrop.h" />
+    <ClInclude Include="..\Classes\AI_Player.h" />
+    <ClInclude Include="..\Classes\AI_RandomSeletor.h" />
+    <ClInclude Include="..\Classes\AI_RootNode.h" />
+    <ClInclude Include="..\Classes\AI_Seletor.h" />
+    <ClInclude Include="..\Classes\AI_Sequence.h" />
+    <ClInclude Include="..\Classes\AI_Speak.h" />
+    <ClInclude Include="..\Classes\AI_TalkTo.h" />
+    <ClInclude Include="..\Classes\AI_Target.h" />
+    <ClInclude Include="..\Classes\AstarCaculator.h" />
+    <ClInclude Include="..\Classes\BackPackUITemplate.h" />
+    <ClInclude Include="..\Classes\BattleTimer.h" />
+    <ClInclude Include="..\Classes\BinaryHeap.h" />
+    <ClInclude Include="..\Classes\BiologyRelationship.h" />
+    <ClInclude Include="..\Classes\BloodBar.h" />
+    <ClInclude Include="..\Classes\Bullet.h" />
+    <ClInclude Include="..\Classes\ChoicesView.h" />
+    <ClInclude Include="..\Classes\ClickController.h" />
+    <ClInclude Include="..\Classes\Dialog.h" />
+    <ClInclude Include="..\Classes\DialogBoxManager.h" />
+    <ClInclude Include="..\Classes\DialogBoxUITemlate.h" />
+    <ClInclude Include="..\Classes\DialogBoxView.h" />
+    <ClInclude Include="..\Classes\Drop.h" />
+    <ClInclude Include="..\Classes\EndingManager.h" />
+    <ClInclude Include="..\Classes\findWayCaculator.h" />
+    <ClInclude Include="..\Classes\GamePauseUtils.h" />
+    <ClInclude Include="..\Classes\HumanPerception.h" />
+    <ClInclude Include="..\Classes\ItemAmmo.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\ItemAttachment.h" />
+    <ClInclude Include="..\Classes\b2Listener.h" />
+    <ClInclude Include="..\Classes\KaguyaHelper.h" />
+    <ClInclude Include="..\Classes\Logger.h" />
+    <ClInclude Include="..\Classes\Mission.h" />
+    <ClInclude Include="..\Classes\MissionManager.h" />
+    <ClInclude Include="..\Classes\MissionTarget.h" />
+    <ClInclude Include="..\Classes\MissionUITemplate.h" />
+    <ClInclude Include="..\Classes\MissionView.h" />
+    <ClInclude Include="..\Classes\MyPoint.h" />
+    <ClInclude Include="..\Classes\OpenPoint.h" />
+    <ClInclude Include="..\Classes\Perception.h" />
+    <ClInclude Include="..\Classes\Perceptionable.h" />
+    <ClInclude Include="..\Classes\PhysicsWorld.h" />
+    <ClInclude Include="..\Classes\BackPackView.h" />
+    <ClInclude Include="..\Classes\Biology.h" />
+    <ClInclude Include="..\Classes\CacheManager.h" />
+    <ClInclude Include="..\Classes\Container.h" />
+    <ClInclude Include="..\Classes\ContainerItemPage.h" />
+    <ClInclude Include="..\Classes\DBHelper.h" />
+    <ClInclude Include="..\Classes\Entity.h" />
+    <ClInclude Include="..\Classes\ItemFood.h" />
+    <ClInclude Include="..\Classes\ItemFoodAttacher.h" />
+    <ClInclude Include="..\Classes\GameManager.h" />
+    <ClInclude Include="..\Classes\GameScene.h" />
+    <ClInclude Include="..\Classes\GameTool.h" />
+    <ClInclude Include="..\Classes\GearItemPage.h" />
+    <ClInclude Include="..\Classes\GearPageView.h" />
+    <ClInclude Include="..\Classes\GLES-Render.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\Item.h" />
+    <ClInclude Include="..\Classes\ItemAttacher.h" />
+    <ClInclude Include="..\Classes\ItemDataBase.h" />
+    <ClInclude Include="..\Classes\ItemFactory.h" />
+    <ClInclude Include="..\Classes\ItemMoveNode.h" />
+    <ClInclude Include="..\Classes\ItemPage.h" />
+    <ClInclude Include="..\Classes\ContainerPageView.h" />
+    <ClInclude Include="..\Classes\GameLayer.h" />
+    <ClInclude Include="..\Classes\KeyBoradController.h" />
+    <ClInclude Include="..\Classes\MouseController.h" />
+    <ClInclude Include="..\Classes\MoveController.h" />
+    <ClInclude Include="..\Classes\NPC.h" />
+    <ClInclude Include="..\Classes\ItemPageView.h" />
+    <ClInclude Include="..\Classes\Player.h" />
+    <ClInclude Include="..\Classes\PlayerPerception.h" />
+    <ClInclude Include="..\Classes\ProtectedTransfer.h" />
+    <ClInclude Include="..\Classes\Relation.h" />
+    <ClInclude Include="..\Classes\RelationShipManager.h" />
+    <ClInclude Include="..\Classes\SceneManager.h" />
+    <ClInclude Include="..\Classes\Singleton.h" />
+    <ClInclude Include="..\Classes\SpeakWords.h" />
+    <ClInclude Include="..\Classes\StartScene.h" />
+    <ClInclude Include="..\Classes\GameUILayer.h" />
+    <ClInclude Include="..\Classes\ItemWeapon.h" />
+    <ClInclude Include="..\Classes\ItemWeaponAttacher.h" />
+    <ClInclude Include="..\Classes\TriggerManager.h" />
+    <ClInclude Include="..\Classes\WeaponAttachmentItemPage.h" />
+    <ClInclude Include="..\Classes\WeaponGearItemPage.h" />
+    <ClInclude Include="..\Classes\WeaponGearPageView.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cocos2d\cocos\2d\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\cocos\editor-support\spine\proj.win32\libSpine.vcxproj">
+      <Project>{b7c2a162-dec9-4418-972e-240ab3cbfcae}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\external\Box2D\proj.win32\libbox2d.vcxproj">
+      <Project>{929480e7-23c0-4df6-8456-096d71547116}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\external\lua\lua53\liblua53\liblua53.vcxproj">
+      <Project>{91aa3c75-af13-484a-815f-ab42684d114d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Classes\Note.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

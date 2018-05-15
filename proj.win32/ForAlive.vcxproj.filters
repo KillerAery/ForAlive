@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\引擎启动类">
+      <UniqueIdentifier>{776bfd80-081c-441c-bf25-0e1e4ea2bf64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\场景类">
+      <UniqueIdentifier>{575bc18f-3ead-4fac-ba8c-90278fd693ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\实体类">
+      <UniqueIdentifier>{bdb70968-15be-4354-a95f-0304814af430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\控制器">
+      <UniqueIdentifier>{77c448b3-c7ba-40a6-b027-e07bea473739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SQL数据类">
+      <UniqueIdentifier>{31b9573e-63d7-443a-b6df-7fede0678074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\物品类">
+      <UniqueIdentifier>{2f4338d6-bb8d-44fa-971c-fd14c276b176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AI类">
+      <UniqueIdentifier>{d7ebdc79-f456-4cd4-9dde-06bb74c483b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\b2物理类">
+      <UniqueIdentifier>{f1ead002-aea0-4e7f-b29d-875c0ebcd5fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\场景类\游戏场景">
+      <UniqueIdentifier>{72f14e33-7e75-463d-8364-9a8debe19b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\场景类\开始场景">
+      <UniqueIdentifier>{a50764da-a999-4042-90fb-7ab3b34f189f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\物品类\物品实际结构">
+      <UniqueIdentifier>{d0f43aaa-7d93-48ff-aa4f-a51c2d338545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\场景类\管理场景">
+      <UniqueIdentifier>{9bc4e4bd-89fc-49fd-b13a-6160edcbc434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\场景类\载入场景">
+      <UniqueIdentifier>{8b9034a8-3fff-45dc-b3c4-6936ad2bb52d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\物品类\物品工厂">
+      <UniqueIdentifier>{def3adf9-a932-48ca-9b4f-9406c4135a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\物品类\物品数据库">
+      <UniqueIdentifier>{bfc927cf-0fef-462a-b824-96129c0372d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\物品类\物品实际结构\物品附属结构">
+      <UniqueIdentifier>{1947d8ba-a001-44ed-9d6d-ea6c06e8d316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类">
+      <UniqueIdentifier>{bc31d69f-2414-48a8-b32d-fcb89e238c76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\缓存管理">
+      <UniqueIdentifier>{a2812c10-a06c-472c-9e06-092456983302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\游戏管理">
+      <UniqueIdentifier>{4530f7fb-6032-4df0-ac6e-e21aeb141da7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AI类\AI管理">
+      <UniqueIdentifier>{85c0cf04-034b-43fd-9f69-c7e94f98de6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AI类\行为节点">
+      <UniqueIdentifier>{ac810462-cca9-4862-a471-fa85c55ac15c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AI类\根节点">
+      <UniqueIdentifier>{b3779abe-858f-4a54-ae55-cca70d70c6d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AI类\控制节点">
+      <UniqueIdentifier>{9fc3b280-6341-4a28-9bd1-c6a98671da6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AI类\基础节点">
+      <UniqueIdentifier>{1aaa6733-d038-4ee3-ab98-106cf1d61246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AI类\行为节点\测试">
+      <UniqueIdentifier>{6ffc07a1-e5e8-42f1-8c90-027400b1de1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AI类\行为节点\行为">
+      <UniqueIdentifier>{5fd0ac36-4cd9-4c2c-bba0-03238a522a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\实体类\生物">
+      <UniqueIdentifier>{c69bf455-ebc3-4849-8cd8-c4e8570c69b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\实体类\生物\生物感知">
+      <UniqueIdentifier>{2a058854-c4d8-4d08-8a7c-b91f33a98b74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AI类\行为节点\行为\目标">
+      <UniqueIdentifier>{a3cd82af-751f-4649-822c-a55d7ad66ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\实体类\生物\生物感知\生物感知基类">
+      <UniqueIdentifier>{edd96c0a-fcd7-4564-9ad9-b452c5494201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\实体类\容器">
+      <UniqueIdentifier>{3c74b95c-efb7-475c-9019-f0db69ee3ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\实体类\实体">
+      <UniqueIdentifier>{d57d2bae-b690-45ee-a020-71b620066eab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\实体类\生物\生物关系">
+      <UniqueIdentifier>{52a47626-4971-40b3-a5d0-fb22d2156a97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\实体类\子弹">
+      <UniqueIdentifier>{611ad510-54f7-4dc7-9583-765bed391e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\实体类\掉落物">
+      <UniqueIdentifier>{052926a1-68b6-4351-bea3-601a8bd758e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\触发器">
+      <UniqueIdentifier>{66c97f62-433e-42bd-a558-d7f62e2c8288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\任务类">
+      <UniqueIdentifier>{66dc53cb-4cd8-4377-a613-d448a934d512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\对话类">
+      <UniqueIdentifier>{af7e4e5f-e4fd-4ec3-80cb-f28f9f06514f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\对话类\对话管理">
+      <UniqueIdentifier>{27743bb8-f55e-44f6-b796-98901d0ef4f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\实体类\生物\玩家">
+      <UniqueIdentifier>{84785694-a7fd-43c5-9461-b9b171bc48ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\实体类\生物\NPC">
+      <UniqueIdentifier>{4286391f-1bcb-483b-96fe-6567d00bd3c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类">
+      <UniqueIdentifier>{fee2be50-bae8-4822-bc62-bc4ce1b36fcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\操作显示">
+      <UniqueIdentifier>{b439176a-12d7-4246-ac4f-e915e3ae8769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\血条显示">
+      <UniqueIdentifier>{55a5aef1-8821-4b63-b69b-cc7d1b69e911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\物品背包显示">
+      <UniqueIdentifier>{99f1ac81-8e3a-4ba0-b7d9-a1a991bc6e79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\物品背包显示\背包项">
+      <UniqueIdentifier>{236da677-51fa-4c88-853e-c010e60df7cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\物品背包显示\物品项">
+      <UniqueIdentifier>{73a5c3dc-f203-45ee-af82-844e83d6c414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\物品背包显示\物品项\基类">
+      <UniqueIdentifier>{c6e5b027-57e3-4a1c-84ab-e2583b5db6e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\物品背包显示\页面项">
+      <UniqueIdentifier>{c5b29b4d-d8ce-47ab-9bc3-7fbea3ddc45d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\物品背包显示\页面项\基类">
+      <UniqueIdentifier>{54d95c64-c59b-46b4-a4f9-b915df37d3fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\物品背包显示\UI模板">
+      <UniqueIdentifier>{c201d2c1-ff5a-44bf-847d-7e8115b8177e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\文字泡显示">
+      <UniqueIdentifier>{5604c51b-9e19-4748-998d-db4d87ca7aca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\对话框显示">
+      <UniqueIdentifier>{f5aec62e-8d39-499c-b9ec-5019319c946b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\对话框显示\UI模板">
+      <UniqueIdentifier>{6fe48b87-aacf-4afe-9719-0e00674cad63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\日志显示">
+      <UniqueIdentifier>{594570b1-7e8c-4925-99e8-2b74efabca7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\任务类\任务管理">
+      <UniqueIdentifier>{a81af7fe-bae2-42c1-9710-5be362e22474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\任务类\任务">
+      <UniqueIdentifier>{ed11ef1a-5c8b-4fbd-9b6a-b13a6fc09c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\对话类\对话数据">
+      <UniqueIdentifier>{71c21ac3-1756-44c9-bb8f-80e3b8268fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\显示类\任务显示">
+      <UniqueIdentifier>{624f96d2-8637-4626-9136-7d0993a31afc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\任务类\任务目标">
+      <UniqueIdentifier>{6c685bc8-8d74-4d11-95d2-9f983ebcc35e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类">
+      <UniqueIdentifier>{41424add-1af1-4104-b024-d887c5541db5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类\杂项">
+      <UniqueIdentifier>{fb568f66-a466-4690-a301-dc1701f9d42b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类\杂项\单例类">
+      <UniqueIdentifier>{152d3205-f0c6-4f6c-b3c1-11205bb382ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类\杂项\保护传递值">
+      <UniqueIdentifier>{12b96cfa-7978-4f8c-beb1-61bddf5b23b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类\杂项\物理模型图形调试">
+      <UniqueIdentifier>{d7282f36-b7e5-48e8-832d-a929b00712ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类\杂项\音乐播放">
+      <UniqueIdentifier>{3498abf3-a0f8-46dd-bb10-daa89393c9af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类\暂停工具">
+      <UniqueIdentifier>{8d3aba4c-0697-4bf9-a53f-91e8c395a8c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\LUA交互类">
+      <UniqueIdentifier>{03f78447-f2fe-4350-94e8-90a1eeea13bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类\杂项\战斗计时">
+      <UniqueIdentifier>{0627db7f-20f0-4afa-94c7-aac2cde9755c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类\杂项\A%2a算法">
+      <UniqueIdentifier>{8aee21f0-5b4b-446c-9651-a9cebcf06183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类\杂项\A%2a算法\开放点">
+      <UniqueIdentifier>{03467daf-f0cd-4cc5-bb0e-59505086511a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类\杂项\A%2a算法\A%2a算法器">
+      <UniqueIdentifier>{712ccba8-62a9-4e66-bbd9-a921d5f9c313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类\杂项\A%2a算法\二叉堆">
+      <UniqueIdentifier>{01b962b9-e790-44ed-afd6-6fb5b24a1322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\管理工具类\辅助工具类\杂项\A%2a算法\寻路算法装饰者">
+      <UniqueIdentifier>{da4585d6-8ef4-400f-97e2-ac02a224d7f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\结局统计">
+      <UniqueIdentifier>{94cbdfed-35bb-4c07-9d67-457bcfe0de4c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src\引擎启动类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>src\引擎启动类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MoveController.cpp">
+      <Filter>src\控制器</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DBHelper.cpp">
+      <Filter>src\SQL数据类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\b2Listener.cpp">
+      <Filter>src\b2物理类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StartScene.cpp">
+      <Filter>src\场景类\开始场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>src\场景类\游戏场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Item.cpp">
+      <Filter>src\物品类\物品实际结构</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SceneManager.cpp">
+      <Filter>src\场景类\管理场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameUILayer.cpp">
+      <Filter>src\场景类\游戏场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BackPackView.cpp">
+      <Filter>src\显示类\物品背包显示\背包项</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ConatinerPageView.cpp">
+      <Filter>src\显示类\物品背包显示\页面项</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GearPageView.cpp">
+      <Filter>src\显示类\物品背包显示\页面项</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GearItemPage.cpp">
+      <Filter>src\显示类\物品背包显示\物品项</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ContainerItemPage.cpp">
+      <Filter>src\显示类\物品背包显示\物品项</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CacheManager.cpp">
+      <Filter>src\管理工具类\缓存管理</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameManager.cpp">
+      <Filter>src\管理工具类\游戏管理</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemMoveNode.cpp">
+      <Filter>src\显示类\操作显示</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemAttacher.cpp">
+      <Filter>src\物品类\物品实际结构\物品附属结构</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemFactory.cpp">
+      <Filter>src\物品类\物品工厂</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemDataBase.cpp">
+      <Filter>src\物品类\物品数据库</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemWeapon.cpp">
+      <Filter>src\物品类\物品实际结构</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemFood.cpp">
+      <Filter>src\物品类\物品实际结构</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemAttachment.cpp">
+      <Filter>src\物品类\物品实际结构</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemAmmo.cpp">
+      <Filter>src\物品类\物品实际结构</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemFoodAttacher.cpp">
+      <Filter>src\物品类\物品实际结构\物品附属结构</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemWeaponAttacher.cpp">
+      <Filter>src\物品类\物品实际结构\物品附属结构</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WeaponGearItemPage.cpp">
+      <Filter>src\显示类\物品背包显示\物品项</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WeaponGearPageView.cpp">
+      <Filter>src\显示类\物品背包显示\页面项</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemPageView.cpp">
+      <Filter>src\显示类\物品背包显示\页面项\基类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemPage.cpp">
+      <Filter>src\显示类\物品背包显示\物品项\基类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WeaponAttachmentItemPage.cpp">
+      <Filter>src\显示类\物品背包显示\物品项</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BackPackUITemplate.cpp">
+      <Filter>src\显示类\物品背包显示\UI模板</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ClickController.cpp">
+      <Filter>src\控制器</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MouseController.cpp">
+      <Filter>src\控制器</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\KeyBoradController.cpp">
+      <Filter>src\控制器</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BloodBar.cpp">
+      <Filter>src\显示类\血条显示</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PhysicsWorld.cpp">
+      <Filter>src\b2物理类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AIManager.cpp">
+      <Filter>src\AI类\AI管理</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_RootNode.cpp">
+      <Filter>src\AI类\根节点</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_Seletor.cpp">
+      <Filter>src\AI类\控制节点</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_Sequence.cpp">
+      <Filter>src\AI类\控制节点</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_Parallel.cpp">
+      <Filter>src\AI类\控制节点</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_BehaviorNode.cpp">
+      <Filter>src\AI类\基础节点</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_ControllNode.cpp">
+      <Filter>src\AI类\基础节点</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_BaseNode.cpp">
+      <Filter>src\AI类\基础节点</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_RandomSeletor.cpp">
+      <Filter>src\AI类\控制节点</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_PickUpDrop.cpp">
+      <Filter>src\AI类\行为节点\测试</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_MoveTo.cpp">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_CatchTo.cpp">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_KeepFrom.cpp">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_Attack.cpp">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_Hover.cpp">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_Speak.cpp">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HumanPerception.cpp">
+      <Filter>src\实体类\生物\生物感知</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Perception.cpp">
+      <Filter>src\实体类\生物\生物感知</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Biology.cpp">
+      <Filter>src\实体类\生物</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLayer.cpp">
+      <Filter>src\场景类\游戏场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BiologyRelationship.cpp">
+      <Filter>src\实体类\生物\生物关系</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Relation.cpp">
+      <Filter>src\实体类\生物\生物关系</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PlayerPerception.cpp">
+      <Filter>src\实体类\生物\生物感知</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Container.cpp">
+      <Filter>src\实体类\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Entity.cpp">
+      <Filter>src\实体类\实体</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SpeakWords.cpp">
+      <Filter>src\显示类\文字泡显示</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DialogBoxView.cpp">
+      <Filter>src\显示类\对话框显示</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DialogBoxUITemlate.cpp">
+      <Filter>src\显示类\对话框显示\UI模板</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_EscapeFrom.cpp">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GLES-Render.cpp">
+      <Filter>src\管理工具类\辅助工具类\杂项\物理模型图形调试</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTool.cpp">
+      <Filter>src\管理工具类\辅助工具类\杂项\音乐播放</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DialogBoxManager.cpp">
+      <Filter>src\对话类\对话管理</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GamePauseUtils.cpp">
+      <Filter>src\管理工具类\辅助工具类\暂停工具</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Dialog.cpp">
+      <Filter>src\对话类\对话数据</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AI_TalkTo.cpp">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\KaguyaHelper.cpp">
+      <Filter>src\LUA交互类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\RelationShipManager.cpp">
+      <Filter>src\实体类\生物\生物关系</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bullet.cpp">
+      <Filter>src\实体类\子弹</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Drop.cpp">
+      <Filter>src\实体类\掉落物</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ChoicesView.cpp">
+      <Filter>src\显示类\对话框显示</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Logger.cpp">
+      <Filter>src\显示类\日志显示</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPC.cpp">
+      <Filter>src\实体类\生物\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player.cpp">
+      <Filter>src\实体类\生物\玩家</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MissionManager.cpp">
+      <Filter>src\任务类\任务管理</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Mission.cpp">
+      <Filter>src\任务类\任务</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MissionView.cpp">
+      <Filter>src\显示类\任务显示</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TriggerManager.cpp">
+      <Filter>src\触发器</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MissionUITemplate.cpp">
+      <Filter>src\显示类\任务显示</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MissionTarget.cpp">
+      <Filter>src\任务类\任务目标</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AstarCaculator.cpp">
+      <Filter>src\管理工具类\辅助工具类\杂项\A%2a算法\A%2a算法器</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\findWayCaculator.cpp">
+      <Filter>src\管理工具类\辅助工具类\杂项\A%2a算法\寻路算法装饰者</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EndingManager.cpp">
+      <Filter>src\结局统计</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src\引擎启动类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>src\引擎启动类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MoveController.h">
+      <Filter>src\控制器</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DBHelper.h">
+      <Filter>src\SQL数据类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\b2Listener.h">
+      <Filter>src\b2物理类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StartScene.h">
+      <Filter>src\场景类\开始场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>src\场景类\游戏场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Item.h">
+      <Filter>src\物品类\物品实际结构</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SceneManager.h">
+      <Filter>src\场景类\管理场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameUILayer.h">
+      <Filter>src\场景类\游戏场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BackPackView.h">
+      <Filter>src\显示类\物品背包显示\背包项</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ContainerPageView.h">
+      <Filter>src\显示类\物品背包显示\页面项</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GearPageView.h">
+      <Filter>src\显示类\物品背包显示\页面项</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GearItemPage.h">
+      <Filter>src\显示类\物品背包显示\物品项</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ContainerItemPage.h">
+      <Filter>src\显示类\物品背包显示\物品项</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CacheManager.h">
+      <Filter>src\管理工具类\缓存管理</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameManager.h">
+      <Filter>src\管理工具类\游戏管理</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemMoveNode.h">
+      <Filter>src\显示类\操作显示</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemAttacher.h">
+      <Filter>src\物品类\物品实际结构\物品附属结构</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemFactory.h">
+      <Filter>src\物品类\物品工厂</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemDataBase.h">
+      <Filter>src\物品类\物品数据库</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemWeapon.h">
+      <Filter>src\物品类\物品实际结构</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemFood.h">
+      <Filter>src\物品类\物品实际结构</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemAttachment.h">
+      <Filter>src\物品类\物品实际结构</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemAmmo.h">
+      <Filter>src\物品类\物品实际结构</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemFoodAttacher.h">
+      <Filter>src\物品类\物品实际结构\物品附属结构</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemWeaponAttacher.h">
+      <Filter>src\物品类\物品实际结构\物品附属结构</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WeaponGearItemPage.h">
+      <Filter>src\显示类\物品背包显示\物品项</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WeaponGearPageView.h">
+      <Filter>src\显示类\物品背包显示\页面项</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemPageView.h">
+      <Filter>src\显示类\物品背包显示\页面项\基类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemPage.h">
+      <Filter>src\显示类\物品背包显示\物品项\基类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WeaponAttachmentItemPage.h">
+      <Filter>src\显示类\物品背包显示\物品项</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BackPackUITemplate.h">
+      <Filter>src\显示类\物品背包显示\UI模板</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ClickController.h">
+      <Filter>src\控制器</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MouseController.h">
+      <Filter>src\控制器</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\KeyBoradController.h">
+      <Filter>src\控制器</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BloodBar.h">
+      <Filter>src\显示类\血条显示</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PhysicsWorld.h">
+      <Filter>src\b2物理类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AIManager.h">
+      <Filter>src\AI类\AI管理</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_RootNode.h">
+      <Filter>src\AI类\根节点</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_Seletor.h">
+      <Filter>src\AI类\控制节点</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_Sequence.h">
+      <Filter>src\AI类\控制节点</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_Parallel.h">
+      <Filter>src\AI类\控制节点</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_BehaviorNode.h">
+      <Filter>src\AI类\基础节点</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_ControllNode.h">
+      <Filter>src\AI类\基础节点</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_BaseNode.h">
+      <Filter>src\AI类\基础节点</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_RandomSeletor.h">
+      <Filter>src\AI类\控制节点</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_PickUpDrop.h">
+      <Filter>src\AI类\行为节点\测试</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_MoveTo.h">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_CatchTo.h">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_KeepFrom.h">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_Attack.h">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_Hover.h">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_Speak.h">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HumanPerception.h">
+      <Filter>src\实体类\生物\生物感知</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Perception.h">
+      <Filter>src\实体类\生物\生物感知</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Biology.h">
+      <Filter>src\实体类\生物</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLayer.h">
+      <Filter>src\场景类\游戏场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Relation.h">
+      <Filter>src\实体类\生物\生物关系</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BiologyRelationship.h">
+      <Filter>src\实体类\生物\生物关系</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_Target.h">
+      <Filter>src\AI类\行为节点\行为\目标</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PlayerPerception.h">
+      <Filter>src\实体类\生物\生物感知</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Perceptionable.h">
+      <Filter>src\实体类\生物\生物感知\生物感知基类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Container.h">
+      <Filter>src\实体类\容器</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Entity.h">
+      <Filter>src\实体类\实体</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SpeakWords.h">
+      <Filter>src\显示类\文字泡显示</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DialogBoxView.h">
+      <Filter>src\显示类\对话框显示</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DialogBoxUITemlate.h">
+      <Filter>src\显示类\对话框显示\UI模板</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_EscapeFrom.h">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Singleton.h">
+      <Filter>src\管理工具类\辅助工具类\杂项\单例类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ProtectedTransfer.h">
+      <Filter>src\管理工具类\辅助工具类\杂项\保护传递值</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GLES-Render.h">
+      <Filter>src\管理工具类\辅助工具类\杂项\物理模型图形调试</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTool.h">
+      <Filter>src\管理工具类\辅助工具类\杂项\音乐播放</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DialogBoxManager.h">
+      <Filter>src\对话类\对话管理</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GamePauseUtils.h">
+      <Filter>src\管理工具类\辅助工具类\暂停工具</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Dialog.h">
+      <Filter>src\对话类\对话数据</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_Player.h">
+      <Filter>src\AI类\行为节点\行为\目标</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_TalkTo.h">
+      <Filter>src\AI类\行为节点\行为</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AIIncludes.h">
+      <Filter>src\AI类\AI管理</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\KaguyaHelper.h">
+      <Filter>src\LUA交互类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AI_Nearest.h">
+      <Filter>src\AI类\行为节点\行为\目标</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\RelationShipManager.h">
+      <Filter>src\实体类\生物\生物关系</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bullet.h">
+      <Filter>src\实体类\子弹</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Drop.h">
+      <Filter>src\实体类\掉落物</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ChoicesView.h">
+      <Filter>src\显示类\对话框显示</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Logger.h">
+      <Filter>src\显示类\日志显示</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPC.h">
+      <Filter>src\实体类\生物\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player.h">
+      <Filter>src\实体类\生物\玩家</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MissionManager.h">
+      <Filter>src\任务类\任务管理</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Mission.h">
+      <Filter>src\任务类\任务</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MissionView.h">
+      <Filter>src\显示类\任务显示</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TriggerManager.h">
+      <Filter>src\触发器</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MissionUITemplate.h">
+      <Filter>src\显示类\任务显示</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MissionTarget.h">
+      <Filter>src\任务类\任务目标</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BattleTimer.h">
+      <Filter>src\管理工具类\辅助工具类\杂项\战斗计时</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BinaryHeap.h">
+      <Filter>src\管理工具类\辅助工具类\杂项\A%2a算法\二叉堆</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\OpenPoint.h">
+      <Filter>src\管理工具类\辅助工具类\杂项\A%2a算法\开放点</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AstarCaculator.h">
+      <Filter>src\管理工具类\辅助工具类\杂项\A%2a算法\A%2a算法器</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MyPoint.h">
+      <Filter>src\管理工具类\辅助工具类\杂项\A%2a算法\开放点</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\findWayCaculator.h">
+      <Filter>src\管理工具类\辅助工具类\杂项\A%2a算法\寻路算法装饰者</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EndingManager.h">
+      <Filter>src\结局统计</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Classes\Note.txt">
+      <Filter>src</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
