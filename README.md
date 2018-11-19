@@ -2,6 +2,13 @@
 cocos2d-x 俯视角丧尸生存2D像素游戏
 
 已集成修改过的cocos2dx库
+https://static.indienova.com/farm/gameimg/2018/02/1481-1518490874.jpg
+
+https://static.indienova.com/farm/gameimg/2018/02/1481-1518490917.jpg
+
+https://static.indienova.com/farm/gameimg/2018/02/1481-1518490916.jpg
+
+https://static.indienova.com/farm/gameimg/2018/02/1481-1518490875.jpg
 
 游戏介绍：
 开放性剧情——
