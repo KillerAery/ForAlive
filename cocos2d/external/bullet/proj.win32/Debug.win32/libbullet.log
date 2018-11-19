@@ -1,3 +1,0 @@
-﻿PosixThreadSupport.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
-btBroadphaseProxy.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
-  libbullet.vcxproj -> E:\Project_Finish\ForAlive\SourceCode\ForAlive\proj.win32\Debug.win32\libbullet.lib
