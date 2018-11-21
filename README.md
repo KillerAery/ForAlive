@@ -1,15 +1,16 @@
 # ForAlive Ver-0.213
 使用C++和cocos2d-x 3.10库开发的一款俯视角丧尸生存2D像素游戏demo（ps:已停止更新）
+
 由于使用cocos2d-x 3.10库遇到一些bug，便修改了部分库源码（已集成修改过的cocos2dx库）
 
 代码涉及：
-实体类体系设计，
-背包&装备&搜刮&物品系统，
-游戏AI/寻路/生物关系&态度/对话系统，
-sqlite3数据库记录数值，
-lua脚本编写AI，
-使用tiledmap地图，
-使用box2d物理引擎。
+- 实体类体系设计
+- 背包&装备&搜刮&物品系统
+- 游戏AI/寻路/生物关系&态度/对话系统
+- sqlite3数据库记录数值
+- lua脚本编写AI
+- 使用tiledmap地图
+- 使用box2d物理引擎
 
 游戏介绍：
 开放性剧情——
@@ -27,5 +28,6 @@ lua脚本编写AI，
 ![](https://github.com/KillerAery/ForAlive/blob/master/MarkDown_Image/%20(1).jpg)
 
 美术：自画+网上的RPGmaker素材
+
 音乐：均来自网上资源
 
