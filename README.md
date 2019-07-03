@@ -1,9 +1,11 @@
 # ForAlive Ver-0.213
-使用C++和cocos2d-x 3.10库开发的一款俯视角丧尸生存2D像素游戏demo
-（ps:已停止更新）
+使用C++和cocos2d-x 3.10库开发的一款俯视角丧尸生存2D像素游戏demo（ps:已停止更新）
+游戏引擎库版本：cocos2d-x 3.10
+可运行平台：windows
 
-> 由于使用cocos2d-x 3.10库遇到一些bug，便修改了部分源码（已集成修改过的cocos2dx库）
-> 
+> 由于使用cocos2d-x库遇到一些bug，便修改了部分源码（已集成修改过的cocos2dx库）
+
+
 ## 技术栈
 - 基于cocos2d-x库，使用C++编写程序主体
 - sqlite3数据库记录物品数值
